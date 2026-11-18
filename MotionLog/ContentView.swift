@@ -191,7 +191,7 @@ struct ActivityEditor: View {
                     Button("Uložit") {
                         onSave(ActivityEntry(id: entry?.id ?? UUID(), kind: kind, date: date, minutes: max(0, minutes), distance: max(0, distance), calories: max(0, calories), note: note))
                         dismiss()
-                    }.fontWeight(.bold())
+                    }.fontWeight(.bold)
                 }
             }
         }
